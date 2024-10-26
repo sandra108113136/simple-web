@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTM 示範網站 - 免費體驗</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; }
+        nav { margin-bottom: 20px; }
+        nav a { margin-right: 15px; }
+        form { max-width: 400px; }
+        label, input { display: block; margin-bottom: 10px; }
+        input[type="submit"] { cursor: pointer; }
+    </style>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <nav>
+        <a href="index.html">首頁</a>
+        <a href="free-trial.html">免費體驗</a>
+        <a href="courses.html">課程頁面</a>
+    </nav>
+    <h1>申請免費體驗</h1>
+    <form id="free-trial-form">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">電子郵件：</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">電話：</label>
+        <input type="tel" id="phone" name="phone">
+        
+        <input type="submit" value="送出申請">
+    </form>
+
+    <script>
+    document.getElementById('free-trial-form').addEventListener('submit', function(e) {
+        e.preventDefault(); // 防止表單直接提交
+        
+        // 這裡可以添加表單驗證邏輯
+
+        // 顯示確認訊息
+        alert('表單已成功送出！');
+        
+        // 重定向到首頁
+        window.location.href = 'index.html';
+    });
+    </script>
+</body>
+</html>
