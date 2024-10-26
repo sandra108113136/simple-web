@@ -3,7 +3,7 @@ const path = require('path');
 
 const gtmId = process.env.GTM_ID || 'GTM-XXXXXXX'; // 使用環境變量或默認值
 const publicDir = path.join(__dirname, 'public');
-const files = ['index.html']; // 需要處理的文件列表
+const files = ['index.html', 'free-trial.html', 'courses.html']; // 需要處理的文件列表
 
 files.forEach(file => {
   const filePath = path.join(publicDir, file);
